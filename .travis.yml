@@ -1,0 +1,13 @@
+language: node_js
+sudo: required
+node_js:
+- '5.2'
+branches:
+  only:
+  - master
+  - dev
+before_script:
+- npm install
+script:
+- ./scripts/build-all.sh
+- ./scripts/tar-all.sh
