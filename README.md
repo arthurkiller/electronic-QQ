@@ -1,4 +1,4 @@
-# Electronic-QQ
+# Electronic-QQ [![Build Status](https://travis-ci.org/arthurkiller/electronic-QQ.svg?branch=master)](https://travis-ci.org/arthurkiller/electronic-QQ)
 the electionic-QQ based on smart-qq &amp; electronic-wechat written in Nodejs
 ## Milestone
 * v0.x build up the program just the electionic wechat
