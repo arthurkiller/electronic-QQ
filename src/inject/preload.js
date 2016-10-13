@@ -7,6 +7,7 @@ const BadgeCount = require('./badge_count');
 const Common = require('../common');
 
 
+// 触发器都在这里，触发开启界面相关的代码，这里是扫码登录后的流程？？？
 class Injector {
   init() {
     if (Common.DEBUG_MODE) {
