@@ -23,7 +23,7 @@ class ElectronicWeChat {
     this.initIPC();
   }
 
-  initApp() {
+  initApp() {//主界面
     app.on('ready', ()=> {
       this.createSplashWindow();
       this.createWeChatWindow();
@@ -39,7 +39,8 @@ class ElectronicWeChat {
     });
   };
 
-  initIPC() {
+  initIPC() { //loading界面
+    //num是干啥用的？？？
     ipcMain.on('badge-changed', (event, num) => {
       if (process.platform == "darwin") {
         app.dock.setBadge(num);
@@ -54,6 +55,7 @@ class ElectronicWeChat {
       }
     });
 
+      //注册各种事件，用于触发inject
     ipcMain.on('user-logged', () => {
       this.wechatWindow.resizeWindow(true, this.splashWindow)
     });
