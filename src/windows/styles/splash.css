@@ -9,22 +9,23 @@ body {
   background: #ECEFF1;
 }
 #splash_container {
-  margin: 10px 20px;
+  position: absolute;
+  left: 140px;
+  top: 180px;
 }
 #splash_text {
   font-family: sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   color: #666;
   vertical-align: top;
   line-height: 100px;
-  animation: fadein 0.75s ease-out;
+  animation: fadein 5s ease-out;
 }
 #splash_loading_img {
-  width: 100px;
   margin: 15px -10px;
   display: inline-block;
   vertical-align: middle;
-  animation: increase 0.5s ease-out;
+  animation: fadein 3s ease-out;
 }
 @keyframes fadein {
   from {
