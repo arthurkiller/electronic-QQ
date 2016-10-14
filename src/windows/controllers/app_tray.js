@@ -13,6 +13,7 @@ const { app, Menu, nativeImage, Tray } = require('electron');
 const Common = require('../../common');
 
 class AppTray {
+    //构造函数，传2个参数
   constructor(splashWindow, wechatWindow) {
     this.splashWindow = splashWindow;
     this.wechatWindow = wechatWindow;

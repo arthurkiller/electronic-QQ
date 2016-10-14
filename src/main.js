@@ -24,12 +24,15 @@ class ElectronicWeChat {
   }
 
   initApp() {//主界面
+      //ready时创建window。。。
+      //when Electron has finished initializing
     app.on('ready', ()=> {
       this.createSplashWindow();
       this.createWeChatWindow();
       this.createTray();
     });
-
+      //activate 展示窗口
+      //which usually happens when the user clicks on the application’s dock icon.
     app.on('activate', () => {
       if (this.wechatWindow == null) {
         this.createWeChatWindow();
@@ -40,8 +43,9 @@ class ElectronicWeChat {
   };
 
   initIPC() { //loading界面
-    //num是干啥用的？？？
+    //num是干啥用的？？？(看起来是消息数在任务栏的设定，就是数字)event 呢？ 同样不知道
     ipcMain.on('badge-changed', (event, num) => {
+        //用于状态变化，需要提示未读消息的时候
       if (process.platform == "darwin") {
         app.dock.setBadge(num);
         if (num) {
@@ -83,6 +87,7 @@ class ElectronicWeChat {
     });
   };
 
+    //创建各种窗口
   createTray() {
     this.tray = new AppTray(this.splashWindow, this.wechatWindow);
   }
