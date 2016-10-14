@@ -1,6 +1,6 @@
 set PLATFORM=%1%
 set ARCH=%2%
-set APP_NAME="Electronic WeChat"
+set APP_NAME="Electronic QQ"
 
 set ignore_list="dist|scripts|\.idea|.*\.md|.*\.yml|node_modules/nodejieba"
 
