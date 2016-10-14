@@ -20,12 +20,15 @@ class Injector {
     new MenuHandler().create();
   }
 
+    //不理解 = =
   initAngularInjection() {
     const self = this;
     const angular = window.angular = {};
     let angularBootstrapReal;
-    Object.defineProperty(angular, 'bootstrap', {
-      get: () => angularBootstrapReal ? function (element, moduleNames) {
+      //定义使用Object.defineProperty创建一个不能被修改的对象的属性。
+    Object.defineProperty(angular, 'bootstrap', 
+        {get: () => angularBootstrapReal 
+                ? function (element, moduleNames) {
         const moduleName = 'webwxApp';
         if (moduleNames.indexOf(moduleName) < 0) return;
         let constants = null;
@@ -45,9 +48,9 @@ class Injector {
           $rootScope.mentionMenu = MentionMenu.inject;
         }]);
         return angularBootstrapReal.apply(angular, arguments);
-      } : angularBootstrapReal,
-      set: (real) => (angularBootstrapReal = real)
-    });
+      }
+                : angularBootstrapReal, set: (real) => (angularBootstrapReal = real)
+    });//Object.defineProperty
   }
 
   initInjectBundle() {

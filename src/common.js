@@ -7,7 +7,6 @@ class Common {
 
 }
 Common.ELECTRON = 'Electron';
-Common.ELECTRONIC_WECHAT = 'Electronic WeChat';
 Common.ELECTRONIC_QQ = 'Electronic QQ';
 Common.DEBUG_MODE = false;
 Common.WINDOW_SIZE = {
