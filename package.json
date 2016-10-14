@@ -1,7 +1,7 @@
 {
-  "name": "electronic-wechat",
-  "version": "1.4.0",
-  "description": "An Electron application for WeChat",
+  "name": "electronic-QQ",
+  "version": "0.1",
+  "description": "An Electron application for Smart QQ",
   "main": "src/main.js",
   "scripts": {
     "start": "electron src/main.js",
@@ -17,20 +17,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/geeeeeeeeek/wechat-electron.git"
+    "url": "https://github.com/arthurkiller/electronic-QQ"
   },
   "keywords": [
     "Electron",
-    "WeChat",
-    "微信",
+    "WebQQ",
+    "QQ",
     "Web"
   ],
-  "author": "Zhongyi Tong",
+  "author": "Arthur Lee @lza",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/geeeeeeeeek/wechat-electron/issues"
+    "url": "https://github.com/arthurkiller/electronic-QQ/issues"
   },
-  "homepage": "https://github.com/geeeeeeeeek/wechat-electron/",
+  "homepage": "https://github.com/arthurkiller/electronic-QQ",
   "dependencies": {
     "electron-packager": "^7.0.0",
     "electron": "^1.3.4",

@@ -20,9 +20,9 @@ ARCH=$2
 echo "Start packaging for $PLATFORM $ARCH."
 
 if [ $PLATFORM = "linux" ]; then
-    APP_NAME="electronic-wechat"
+    APP_NAME="Electronic-QQ"
 else
-    APP_NAME="Electronic WeChat"
+    APP_NAME="Electronic QQ"
 fi
 
 ignore_list="dist|scripts|\.idea|.*\.md|.*\.yml|node_modules/nodejieba"
@@ -34,6 +34,6 @@ if [ $? -eq 0 ]; then
 fi
 
 if [ $PLATFORM = "darwin" ]; then
-    ditto -rsrcFork ./dist/Electronic\ WeChat-darwin-x64/Electronic\ WeChat.app /Applications/Electronic\ WeChat.app
-    echo "$(tput setaf 3)App copied to /Applications. You can open Electronic WeChat there or from Spotlight.$(tput sgr0)"
+    ditto -rsrcFork ./dist/Electronic\ QQ-darwin-x64/Electronic\ QQ.app /Applications/Electronic\ QQ.app
+    echo "$(tput setaf 3)App copied to /Applications. You can open Electronic QQ there or from Spotlight.$(tput sgr0)"
 fi

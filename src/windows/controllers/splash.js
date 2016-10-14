@@ -7,6 +7,7 @@ const path = require('path');
 const { BrowserWindow } = require('electron');
 const Common = require('../../common');
 
+//显示 loading window，splash.html已经修改
 class SplashWindow {
   constructor() {
     this.splashWindow = new BrowserWindow({

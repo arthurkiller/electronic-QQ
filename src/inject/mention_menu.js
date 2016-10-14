@@ -9,6 +9,7 @@ const pinyin = require('pinyin');
 class MentionMenu {
 
   static init() {
+      //jquery
     const $box = $('<div id="userSelectionBox"/>');
 
     const $div = $('<div/>');
