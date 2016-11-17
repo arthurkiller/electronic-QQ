@@ -8,3 +8,6 @@ Any Bugs found plz put up an issue.
 * v0.x build up the program just the electionic wechat
 * v1.x get the smart QQ API and make it works
 * v2.x personalized the app make it more QQ-like
+
+## Note
+* busy in coding, this project will be delayed
