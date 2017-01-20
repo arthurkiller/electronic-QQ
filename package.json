@@ -1,6 +1,6 @@
 {
   "name": "electronic-QQ",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "An Electron application for Smart QQ",
   "main": "src/main.js",
   "scripts": {
