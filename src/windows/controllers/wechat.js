@@ -1,5 +1,6 @@
 /**
  * Created by Zhongyi on 5/2/16.
+ * Modify by arthur @ 21/1/17
  */
 'use strict';
 
