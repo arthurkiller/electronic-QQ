@@ -10,20 +10,20 @@ Common.ELECTRON = 'Electron';
 Common.ELECTRONIC_QQ = 'Electronic QQ';
 Common.DEBUG_MODE = false;
 Common.WINDOW_SIZE = {
-  width: 800,
-  height: 600,
+    width: 800,
+    height: 600,
 };
 Common.WINDOW_SIZE_LOGIN = {
-  width: 380,
-  height: 540,
+    width: 380,
+    height: 540,
 };
 Common.WINDOW_SIZE_LOADING = {
-  width: 380,
-  height: 120,
+    width: 380,
+    height: 120,
 };
-Common.USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.1 Safari/537.36';
+Common.USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36';
 
-Common.WEB_WECHAT = 'https://w.qq.com/';
+Common.WEB_QQ= 'http://w.qq.com/';
 Common.GITHUB = 'https://github.com/arthurkiller/electronic-QQ';
 Common.GITHUB_RELEASES = 'https://github.com/arthurkliller/electronic-QQ/releases';
 Common.GITHUB_ISSUES = 'https://github.com/arthurkliller/electronic-QQ/issues';
@@ -36,7 +36,7 @@ Common.UPDATE_ERROR_UNKNOWN = 'Something went wrong.';
 Common.UPDATE_NA_TITLE = 'No Update Available';
 Common.UPDATE_ERROR_NETWORK = 'Connection hang up unexpectedly. Check your network settings.';
 Common.UPDATE_ERROR_LATEST = (version) => {
-  return `You are using the latest version(${version}).`;
+    return `You are using the latest version(${version}).`;
 };
 
 Common.MENTION_MENU_INITIAL_X = 300;

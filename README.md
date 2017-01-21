@@ -8,3 +8,12 @@ Any Bugs found plz put up an issue.
 * v0.x build up the program just the electionic wechat
 * v1.x get the smart QQ API and make it works
 * v2.x personalized the app make it more QQ-like
+
+## Note
+ I really toooo busy these days and get stuck on AngularJS. I am a back-end progremar with C/C++/Go and never write any JS before....LOL
+
+ I have scheduled this issue in 2017 TODO list 
+
+ This project is because I used to work on Linux and the author of electronic-WeChat said he will never write a wechat in nodejs because he just don't use QQ !!!.So I with my friend wanna to do this based on the electronic-wechat code.
+
+ If you have any idea about this just email me , let's do it together!

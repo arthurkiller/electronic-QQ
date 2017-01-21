@@ -27,19 +27,23 @@ class Injector {
     let angularBootstrapReal;
       //定义使用Object.defineProperty创建一个不能被修改的对象的属性。
     Object.defineProperty(angular, 'bootstrap', 
-        {get: () => angularBootstrapReal 
-                ? function (element, moduleNames) {
+        {get: () => angularBootstrapReal //一旦被访问就会回调这个函数，并且将值返回给用户
+                ? function (element, moduleNames) { //如果angluarboststrapreal是真，就调用这个函数
         const moduleName = 'webwxApp';
-        if (moduleNames.indexOf(moduleName) < 0) return;
+        if (moduleNames.indexOf(moduleName) < 0) return;//no such key
+
         let constants = null;
         angular.injector(['ng', 'Services']).invoke(['confFactory', (confFactory) => (constants = confFactory)]);
+
         angular.module(moduleName).config(['$httpProvider', ($httpProvider) => {
           $httpProvider.defaults.transformResponse.push((value) => {
             return self.transformResponse(value, constants);
           });
         },
         ]).run(['$rootScope', ($rootScope) => {
+            //login函数
           ipcRenderer.send('wx-rendered', MMCgi.isLogin);
+            //登陆成功
 
           $rootScope.$on('newLoginPage', () => {
             ipcRenderer.send('user-logged', '');
