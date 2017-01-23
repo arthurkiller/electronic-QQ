@@ -5,8 +5,8 @@ node_js:
 before_script:
   - npm install
 script:
-  - "./scripts/build-all.sh"
-  - "./scripts/tar-all.sh"
+  - ./scripts/build-all.sh
+  - ./scripts/tar-all.sh
 deploy:
   provider: releases
   api_key:
