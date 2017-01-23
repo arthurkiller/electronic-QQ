@@ -10,7 +10,7 @@ Any Bugs found plz put up an issue.
 * v2.x personalized the app make it more QQ-like
 
 ## Release Note
-* v0.0.1 finally make it just work.I packed it up for more platform user in Release. You can just go and [download](https://github.com/arthurkiller/electronic-QQ/releases) it.
+* v0.0.1 finally make it just work.I packed it up for more platform user in Release. You can just go and [download](https://github.com/arthurkiller/electronic-QQ/releases) the binary package to install.
 
 ## Note
  This project is because I used to work on Linux and the author of electronic-WeChat said he will never write a wechat in nodejs because he just don't use QQ !!!.So I with my friend wanna to do this based on the electronic-wechat code.
