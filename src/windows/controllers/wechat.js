@@ -53,7 +53,7 @@ class WeChatWindow {
             },
         });
 
-        this.wechatWindow.webContents.setUserAgent(Common.USER_AGENT);
+        this.wechatWindow.webContents.setUserAgent(Common.USER_AGENT[process.platform]);
         if (Common.DEBUG_MODE) {
             this.wechatWindow.webContents.openDevTools();
         }
