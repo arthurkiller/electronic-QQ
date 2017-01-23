@@ -1,8 +1,21 @@
 language: node_js
 sudo: required
 node_js:
-    - '5.2'
+  - '5.2'
 before_script:
-    - npm install
+  - npm install
 script:
-    - ./scripts/build-all.sh
+  - ./scripts/build-all.sh
+  - ./scripts/tar-all.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: O7SKSDlddTLEcwbiUhlg+GgRvgXXPlO3rcTOHAXHPIV/T+k5848zLpRILAXZ3EX4H6zllk+SXiarC+AMP0GapA7todkul3aVxUDsMoBRILeouY+LzuekBfjj4eP9D4vrv30ukkUz3A/y1b80DpVzI68m/WmcBZi0vbHECzpJ+3xUgJyuEFFB+hOMIT4Iu2CT3u74m+NuqbhgSc7mA0dmPgRVqoCLUoIQwut8niy8FIXmemfO16PmkDj2l8NsGn0IRCltwSeANxZJZPRan3lsfp9TKgJdp9aob/Piqk9keIaTFXs6vBmBcOSx3Pqpop8ZXVrOj8RmRdIGllZpcwIJ36spGRUtkkg265Yb2H/q0EZ8agKALuPcRO9tzvxk+n+G8rHxiYCi3lzTZMj2uiqvdluSpzTv2l0XMqtyETvAHKh2DAtJjM/jPXoEx0GxHEFaGMfXMX9SgO4zcW6h8FLTSCUECDPKCwE7s6mAzIKjw8heNO33B0q6H0VuRL/JM+tHTkTfRmtiRai617MuosVU8VExFKaX404I8ZQdsOk1UzgY8eY3/urRlv4vKpRTSXUdG8JDAiBRAc4kgfB8L+Nrn6+1B6qq8yq9Qi/+PpGYtVs3xWaM0OdRrMi0pKCTU12BRHUOo37ZvIFob7o/3ie8N4PgtjxaRqNYUo6qzdyaUGE=
+  file:
+  - 'dist/mac-osx.tar.gz'
+  - 'dist/linux-x64.tar.gz'
+  - 'dist/linux-ia32.tar.gz'
+  skip_cleanup: true
+  on:
+    repo: arthurkiller/electronic-QQ
+    tags: true
