@@ -28,7 +28,7 @@ Common.USER_AGENT = {
   'darwin': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
 }
 
-Common.WEB_QQ= 'http://w.qq.com/';
+Common.WEB_QQ= 'http://web2.qq.com/';
 Common.GITHUB = 'https://github.com/arthurkiller/electronic-QQ';
 Common.GITHUB_RELEASES = 'https://github.com/arthurkliller/electronic-QQ/releases';
 Common.GITHUB_ISSUES = 'https://github.com/arthurkliller/electronic-QQ/issues';
